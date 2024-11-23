@@ -1,0 +1,14 @@
+vllm
+jupyter
+ray
+fastapi
+uvicorn
+openai
+gradio
+pytest
+black
+faiss-gpu
+sentence-transformers
+semchunk
+isort
+flake8

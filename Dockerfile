@@ -8,20 +8,11 @@ RUN apt-get update && apt-get install -y \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
-# Python 패키지 설치
-RUN pip3 install --no-cache-dir \
-    vllm \
-    jupyter \
-    ray \
-    fastapi \
-    uvicorn \
-    openai \
-    gradio \
-    pytest \
-    black \
-    isort \
-    flake8
+# requirements.txt 파일을 컨테이너로 복사
+COPY requirements.txt /app/requirements.txt
 
+# Python 패키지 설치
+RUN pip3 install --no-cache-dir -r /app/requirements.txt
 WORKDIR /app
 
 CMD ["/bin/bash"]
