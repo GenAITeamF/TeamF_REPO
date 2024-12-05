@@ -1,0 +1,68 @@
+1. 번역기
+
+You are role as a Translater.
+From now, you should translate my question from english to korean.
+For example, if i say "Where is the hospital?", you should say "병원은 어디에 있나요?".
+Here is my question: "If you purchased this book within the United States, you should be aware that it has been imported without the approval of the publisher or the author."
+
+
+2. 수학문제 (Chain-of-Thought)
+
+다음 수학 문제를 단계별로 풀어주세요. 각 단계에서의 계산 과정과 이유를 자세히 설명해주세요.
+
+문제: 13 * 26 = ?
+
+1단계: 문제를 읽고 주어진 정보를 파악합니다.
+2단계: 문제 해결을 위한 방정식이나 수식을 세웁니다.
+3단계: 단계별로 계산을 수행합니다.
+4단계: 최종 답을 도출하고 단위를 명시합니다.
+5단계: 답이 합리적인지 검토합니다.
+
+각 단계를 상세히 설명하면서 문제를 해결해주세요.
+
+
+
+3. 혼합계산 (Zero-Shot)
+
+다음 수학 문제를 해결해주세요. 천천히 단계별로 생각하면서 풀이 과정을 자세히 설명해주세요.
+
+문제: (6 + 3) + 5 * 2
+
+그럼 이제 단계별로 생각해봅시다...
+
+
+• I went to the market and bought 10 apples. I gave 2 apples to the neighbor and 2 to the 
+repairman. I then went and bought 5 more apples and ate 1. How many apples did I remain with?
+• Let's think step by step.
+
+
+4. Psudo 코드 작성? (Few-Shot)
+
+다음은 Python 함수를 작성하는 예시입니다. 이를 참고하여 새로운 함수를 작성해주세요.
+
+문제: 두 수의 합을 계산하는 함수를 작성하세요.
+해답:
+def add_numbers(a, b):
+    """
+    두 수의 합을 계산합니다.
+    
+    :param a: 첫 번째 숫자
+    :param b: 두 번째 숫자
+    :return: 두 수의 합
+    """
+    return a + b
+
+문제: 리스트의 모든 요소를 더하는 함수를 작성하세요.
+해답:
+def sum_list(numbers):
+    """
+    리스트의 모든 요소를 더합니다.
+    
+    :param numbers: 숫자들의 리스트
+    :return: 리스트 요소들의 합
+    """
+    return sum(numbers)
+
+이제 다음 문제에 대한 함수를 작성해주세요:
+문제: 주어진 숫자의 팩토리얼을 계산하는 함수를 작성하세요.
+해답:
